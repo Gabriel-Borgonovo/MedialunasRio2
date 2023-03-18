@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+     <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/5389a2bf4d.js" crossorigin="anonymous"></script>
+
+    <!-- Libreria de eventos con scroll -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Medialunas y Facturas</title>
+</head>
+<body>
+    
+    <div class="contiene_todo">
+
+        <!-- header con menu -->
+
+        <header class="header">
+            <a class="a_logo" href="index.html">Logo</a>
+    
+            <button class="button">
+                <i class="fa-solid fa-bars burguer_menu"></i>
+            </button>
+    
+            <nav class="header_nav">
+                <ul class="nav_ul">
+                    <li class="nav_ul_li"><a class="nav-a" href="#">Inicio</a></li>
+                    <li class="nav_ul_li"><a class="nav-a" href="#">Nosotros</a></li>
+                    <li class="nav_ul_li"><a class="nav-a" href="#">Servicios</a></li>
+                    <li class="nav_ul_li"><a class="nav-a" href="#tipologias">Tipologías</a></li>
+                    <li class="nav_ul_li"><a class="nav-a" href="#cabanas">Cabañas</a></li>
+                    <li class="nav_ul_li"><a class="nav-a" href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="slider">
+
+            <div class="slider-bg">
+                <article class="slider-titles">
+                    <h1>Medialunas y Facturas Río 2</h1>
+                    <h2>"Fabricadas de manera artesanal"</h2>
+                    <div class="slider-container-button">
+                        <a href="https://wa.link/0v9qd3" class="slider-button whp-button" target="_blank">Whatsapp</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <main>
+            <h2>Nuestras promos</h2>
+            <div class="container">
+                <section class="row margin-top" id="container-products"></section>
+            </div>
+        </main>
+        
+        
+    </div>
+
+    <template id="template-productos">
+
+        <div class="col-10 col-sm-6 col-lg-4 col-xl-4 contiene-imagen">
+            <img src="..." alt="..." title="..." class="card-image" />
+            <div class="contiene-textos">
+                <h3>Producto</h3>
+                <p class="descripcion">Descripción</p>
+                <p>$<span>$1000</span></p>
+                <button>Añadir al carrito <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+
+    </template>
+    
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>

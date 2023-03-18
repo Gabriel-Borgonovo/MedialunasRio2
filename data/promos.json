@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Promo 1: Surtidas",
+        "img": "../assets/imgs/promo1.png",
+        "variedad1": "3 Medialunas Con Dulce De Leche",
+        "variedad2": "3 Medialunas Con Crema Pastelera",
+        "variedad3": "3 Medialunas Con Almibar",
+        "variedad4": "3 Facturas con Crema Pastelera",
+        "price": 850
+    },
+    {
+        "title": "Promo 1: Surtidas",
+        "img": "../assets/imgs/promo1.png",
+        "variedad1": "3 Medialunas Con Dulce De Leche",
+        "variedad2": "3 Medialunas Con Crema Pastelera",
+        "variedad3": "3 Medialunas Con Almibar",
+        "variedad4": "3 Facturas con Crema Pastelera",
+        "price": 850
+    }
+]

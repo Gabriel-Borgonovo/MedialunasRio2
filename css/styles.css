@@ -19,17 +19,42 @@ html{
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    background-color: #f0f2f5;
 }
 
 body,
 h2,
 ul{
     margin: 0;
-    padding: 0;  
+    padding: 0; 
+    background-color: #f0f2f5; 
 }
 
+/**Layout con grid*/
 
+.contiene_todo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'header header header header'
+                        'slider slider slider slider'
+                        'main main main main'
+                        'footer footer footer footer';
+}
+
+.header{
+    grid-area: header;
+}
+
+.slider{
+    grid-area: slider;
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+}
 
 /* menu principal */
 
@@ -93,14 +118,14 @@ ul{
 }
 
 .header_nav.activado{
-    height: 42vh;
+    height: 50vh;
     pointer-events: auto; 
 }
 
 .nav_ul{
     list-style: none;
     padding: 10px 0;
-    
+    background:none;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -114,6 +139,7 @@ ul{
     text-decoration: none;
     font-family: "Segoe UI",Segoe,Tahoma,Arial,Verdana,sans-serif;
     color: var(--color-tercero);
+    text-shadow: 1px 1px 3px black;
     font-weight: 400;
     font-size: 16px;
     /* letter-spacing: 1.5px; */
@@ -133,21 +159,21 @@ ul{
  
 .slider{
     width: 100%;
-    margin-top: 65px;
-    height: 70vh;
+    margin-top: 55px;
+    height: 80vh;
     background-image: url("../assets/imgs/fact2.png");
     filter: brightness(1.2);
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
     background-attachment: fixed;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .slider-bg{
     width: inherit;
     height: inherit;
-    /* background-color: rgba(0, 0, 0, 0.3); */
+    background-color: rgba(0, 0, 0, 0.3); 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,26 +184,32 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 15px black;
     border-radius: 20px;
     padding: 15px;
+    transition: all .5s ease;
 }
 
 .slider-titles h1{
     display: flex;
+    text-shadow: 0 0 10px black;
     flex-direction: column;
     align-items: center;
-    color: var(--color-p);
+    color: var(--color-tercero);
     font-size: 20px;
 }
 
 .slider-titles h2{
     font-family: "Segoe UI",Segoe,Tahoma,Arial,Verdana,sans-serif;
-    color: var(--color-p);
+    color: var(--color-tercero);
+    text-shadow: 0 0 10px black;
     font-size: 18px;
     letter-spacing: normal;
     font-weight: 400;
+    background: none;
+}
+
+.disapear{
+    display: none;
 }
 
 .slider-container-button{
@@ -207,6 +239,7 @@ ul{
 
 .whp-button:hover{
     background-color: #03ad36;
+    color: var(--color-tercero);
 }
 
 
@@ -214,6 +247,12 @@ ul{
 
 .promos-h2{
     text-align: center;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 50px;
 }
 
 #container-products{
@@ -222,23 +261,36 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 
 
 .card-image{
-    width: 60%;
+    width: 100%;
 }
 
 .card-container{
     display: flex;
     justify-content: space-evenly ;
     align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
 }
 
-.card-container:nth-child(2) .card-image{
-    order: 1;
+
+/**Footer*/
+
+.footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    background-color: var(--color-primero);
 }
+
+
 
 
 
@@ -272,14 +324,24 @@ ul{
         margin-right: 40px;
     }
 
+    .burguer_menu{
+        color: var(--color-tercero);
+    }
+
     /*Slider*/
    .slider{
-        height: 80vh;
+        margin-top: 0;
+        height: 90vh;
     }
 
     .slider-button{
         width: 150px;
         padding: 10px 0;
+    }
+
+    /*Cards*/
+    .card-image{
+        width: 80%;
     }
 }
 
@@ -313,10 +375,10 @@ ul{
     
     .nav-a{
         display: inline-block;
-        color: var(--color-texto-primero);
+        color: var(--color-tercero);
         padding: 18px 15px;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 18px;
         border-radius: 5px;
         transition: all .4s ease;
     }
@@ -333,6 +395,26 @@ ul{
 
     .button{
         display: none;
+    }
+
+
+    /**Slider**/
+
+    .slider-titles h1{
+        font-size: 30px;
+    }
+    .slider-titles h2{
+        font-size: 20px;
+    }
+
+    /**cards**/
+
+    .card-image{
+        width: 50%;
+    }
+
+    .card-container:nth-child(2) .card-image{
+        order: 1;
     }
 }
 

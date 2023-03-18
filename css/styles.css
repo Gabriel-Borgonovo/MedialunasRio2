@@ -19,6 +19,7 @@ html{
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    background-color: #f0f2f5;
 }
 
 body,
@@ -26,10 +27,6 @@ h2,
 ul{
     margin: 0;
     padding: 0;  
-}
-
-.contiene_todo{
-    height: 1000px;
 }
 
 
@@ -215,8 +212,32 @@ ul{
 
 /**Product cards*/
 
+.promos-h2{
+    text-align: center;
+}
+
+#container-products{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 .card-image{
-    width: 100%;
+    width: 60%;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+}
+
+.card-container:nth-child(2) .card-image{
+    order: 1;
 }
 
 

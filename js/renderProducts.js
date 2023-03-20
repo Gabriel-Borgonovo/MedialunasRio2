@@ -1,6 +1,7 @@
 const d = document;
 const $contenedorDeProductos = d.getElementById("container-products");
 
+
 export default function renderProducts(){
     
     fetch('../data/promos.json')
@@ -25,12 +26,18 @@ const pintarProductos = (data) => {
         $template.querySelector("img").setAttribute('title', producto.title);
 
         $template.querySelector("h3").textContent = producto.title;
-        $template.querySelector(".descripcion").textContent = producto.variedad1;
+
+        $template.querySelector(".descripcion1").textContent = producto.variedad1 || '';
+        $template.querySelector(".descripcion2").textContent = producto.variedad2 || '';
+        $template.querySelector(".descripcion3").textContent = producto.variedad3 || '';
+        $template.querySelector(".descripcion4").textContent = producto.variedad4 || '';
+        
         $template.querySelector("span").textContent = producto.price;
         // $template.querySelector("button").dataset.id = producto.id;
 
         const clone = $template.cloneNode(true);
         $fragment.appendChild(clone);
+        
     });
 
     $contenedorDeProductos.appendChild($fragment);

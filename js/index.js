@@ -2,6 +2,7 @@ import burgerMenu from "./burgerMenu.js";
 import renderProducts from "./renderProducts.js";
 import scrollMenu from "./scrollMenu.js";
 
+
 const d = document;
 
 d.addEventListener('DOMContentLoaded', (e) => {
@@ -10,6 +11,7 @@ d.addEventListener('DOMContentLoaded', (e) => {
     scrollMenu();
 
     renderProducts();
+
 });
 
 

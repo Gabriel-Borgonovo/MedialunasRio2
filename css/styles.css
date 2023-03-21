@@ -123,6 +123,10 @@ ul{
     pointer-events: auto; 
 }
 
+.nav-logo{
+    width: 100px;
+}
+
 .nav_ul{
     list-style: none;
     padding: 10px 0;

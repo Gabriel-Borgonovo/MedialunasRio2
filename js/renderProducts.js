@@ -4,7 +4,7 @@ const $contenedorDeProductos = d.getElementById("container-products");
 
 export default function renderProducts(){
     
-    fetch("https://github.com/Gabriel-Borgonovo/MedialunasRio2/blob/master/js/promos.json")
+    fetch("./js/promos.json")
         .then( (resp) => resp.json() )
         .then( (data) => {
             pintarProductos(data);

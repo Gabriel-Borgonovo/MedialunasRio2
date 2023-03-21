@@ -4,7 +4,7 @@ const $contenedorDeProductos = d.getElementById("container-products");
 
 export default function renderProducts(){
     
-    fetch("../js/promos.json")
+    fetch("../data/promos.json")
         .then( (resp) => resp.json() )
         .then( (data) => {
             pintarProductos(data);

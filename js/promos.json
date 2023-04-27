@@ -6,7 +6,7 @@
         "variedad2": "3 Medialunas Con Crema Pastelera",
         "variedad3": "3 Medialunas Con Almibar",
         "variedad4": "3 Facturas con Crema Pastelera",
-        "price": 850
+        "price": 950
     },
     {
         "title": "Promo 2: Medialunas Rellenas",
@@ -15,7 +15,7 @@
         "variedad2": "6 Medialunas Con Crema Pastelera",
         "variedad3": "",
         "variedad4": "",
-        "price": 900
+        "price": 1000
     },
     {
         "title": "Promo 3: Todas Crema",
@@ -24,7 +24,7 @@
         "variedad2": "6 Facturas con Crema Pastelera",
         "variedad3": "",
         "variedad4": "",
-        "price": 900
+        "price": 1000
     },
     {
         "title": "Promo 4: Todas Dulce",
@@ -33,7 +33,7 @@
         "variedad2": "",
         "variedad3": "",
         "variedad4": "",
-        "price": 900
+        "price": 1000
     },
     {
         "title": "Promo 5: Dulce, Crema y Membrillo",
@@ -42,7 +42,7 @@
         "variedad2": "3 Facturas con Crema Pastelera",
         "variedad3": "3 Facturas Con Membrillo",
         "variedad4": "",
-        "price": 900
+        "price": 1000
     },
     {
         "title": "Promo 6: Dulce, Almibar y Membrillo",
@@ -51,7 +51,7 @@
         "variedad2": "4 Medialunas Con Almibar",
         "variedad3": "4 Facturas Con Membrillo",
         "variedad4": "",
-        "price": 900
+        "price": 1000
     },
     {
         "title": "Promo 7: Panes, Medialunas y Facturas",
@@ -60,7 +60,7 @@
         "variedad2": "2 Medialunas Con Almibar",
         "variedad3": "3 Facturas con Crema Pastelera",
         "variedad4": "2 Medialunas Rellenas",
-        "price": 950
+        "price": 1050
     },
     {
         "title": "Promo 8: Panes Almibar y Rellenos",
@@ -69,7 +69,7 @@
         "variedad2": "6 Panes de Leche Con Almibar",
         "variedad3": "",
         "variedad4": "",
-        "price": 900
+        "price": 1000
     },
     {
         "title": "Promo 9: Medialunas Surtidas",
@@ -78,7 +78,7 @@
         "variedad2": "4 Medialunas Con Dulce de Leche",
         "variedad3": "4 Medialunas Con Crema Pastelera",
         "variedad4": "",
-        "price": 850
+        "price": 950
     },
     {
         "title": "Promo 10: Panes, Membrillo, Medialunas",
@@ -87,6 +87,6 @@
         "variedad2": "3 Panes de leche Rellenos",
         "variedad3": "3 Facturas de Membrillo",
         "variedad4": "",
-        "price": 950
+        "price": 1050
     }
 ]
